@@ -197,7 +197,6 @@ public:
             currNode->next = top;
             top = currNode;
         }
-        cout << "Added: " << currNode->data << " to the top of the stack." << endl;
     }
     
     void pop() {
@@ -207,7 +206,7 @@ public:
             cout << "This stack is empty." << endl;
         }
         else {
-            cout << "Pop: " << top->data << endl << endl;
+            cout << "Pop: " << top->data << endl;
             
             // sets the popped value to NULL (removes from the Stack)
             top = temp->next;
@@ -220,7 +219,7 @@ public:
             cout << "This stack is empty." << endl;
         }
         else {
-            cout << "Peek: " << top->data << endl << endl;
+            cout << "Peek: " << top->data << endl;
         }
     }
     
@@ -239,6 +238,6 @@ public:
 
 
 int main() {
-
+    
     return 0;
 }
